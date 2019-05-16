@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'FindFace'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.bytedeco:javacv:1.0'
+    compile 'org.bytedeco.javacpp-presets:opencv:3.0.0-1.0:linux-x86_64'
+    compile 'org.bytedeco.javacpp-presets:ffmpeg:2.7.1-1.0:linux-x86_64'
+    compile group: 'org.bytedeco', name: 'javacv-platform', version: '1.4'
+    compile group: 'javazoom', name: 'jlayer', version: '1.0.1'
+}
